@@ -39,4 +39,4 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main
 ## Test
 
 Check the contents of the ConfigMaps are present in the nginx.conf file using:
-`kubectl exec ingress-nginx-controller-873061567-4n3k2 -n ingress-nginx -- cat /etc/nginx/nginx.conf`
+`kubectl exec deployment/ingress-nginx-controller -n ingress-nginx -- cat /etc/nginx/nginx.conf`
